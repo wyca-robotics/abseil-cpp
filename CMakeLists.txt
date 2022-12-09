@@ -70,6 +70,8 @@ else()
   set(ABSL_USING_CLANG OFF)
 endif()
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # find dependencies
 ## pthread
 find_package(Threads REQUIRED)
